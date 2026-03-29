@@ -1,7 +1,7 @@
-from langchain.vectorstores import FAISS
-from langchain.embeddings import OllamaEmbeddings
+from langchain_community.vectorstores import FAISS
+from langchain_ollama import OllamaEmbeddings 
 from langchain.llms import Ollama
-from langchain.document_loaders import TextLoader
+from langchain_community.document_loaders import TextLoader
 
 # Load docs
 loader = TextLoader("data/gondia.txt")
